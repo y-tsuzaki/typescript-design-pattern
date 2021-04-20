@@ -36,19 +36,18 @@ var TemplateMethod;
             return _this;
         }
         CharDisplay.prototype.open = function () {
-            console.log('<<');
+            console.log("<<");
         };
         CharDisplay.prototype.print = function () {
             console.log(this.c);
         };
         CharDisplay.prototype.close = function () {
-            console.log('>>');
+            console.log(">>");
         };
         return CharDisplay;
     }(AbstractDisplay));
     var StringDisplay = /** @class */ (function (_super) {
         __extends(StringDisplay, _super);
-        // TSにはcharはないらしい。独自定義する必要がある
         function StringDisplay(str) {
             var _this = _super.call(this) || this;
             _this.str = str;
@@ -64,11 +63,11 @@ var TemplateMethod;
             this.printLine();
         };
         StringDisplay.prototype.printLine = function () {
-            var line = '+';
+            var line = "+";
             for (var i = 0; i < this.str.length; i++) {
-                line += '-';
+                line += "-";
             }
-            line += '+';
+            line += "+";
             console.log(line);
         };
         return StringDisplay;
@@ -78,15 +77,15 @@ var TemplateMethod;
         }
         Main.prototype.main = function () {
             var displays = [];
-            displays.push(new CharDisplay('c'));
-            displays.push(new StringDisplay('hello'));
-            displays.push(new StringDisplay('こんにちは'));
+            displays.push(new CharDisplay("c"));
+            displays.push(new StringDisplay("hello"));
+            displays.push(new StringDisplay("こんにちは"));
             for (var display in displays) {
                 displays[display].display();
             }
         };
         return Main;
     }());
-    (new Main()).main();
+    new Main().main();
 })(TemplateMethod || (TemplateMethod = {}));
 //# sourceMappingURL=03_TemplateMethod.js.map

@@ -1,0 +1,19 @@
+{
+  "name": "typescript-design-pattern",
+  "version": "1.0.0",
+  "description": "TSでJava言語で学ぶデザインパターン入門をやる",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y-tsuzaki/typescript-design-pattern.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/y-tsuzaki/typescript-design-pattern/issues"
+  },
+  "homepage": "https://github.com/y-tsuzaki/typescript-design-pattern#readme"
+}
